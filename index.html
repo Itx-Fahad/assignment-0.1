@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figma.com</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: system-ui;
+        }
+
+        .header {
+            background-color: rgb(43, 43, 184);
+
+        }
+
+        ul {
+            padding: 14px;
+        }
+
+        nav>ul>li {
+            display: inline;
+            color: white;
+            margin: 10px 20px;
+            text-transform: capitalize;
+        }
+
+        nav>ul>li>span {
+            padding-right: 60px;
+            padding-left: 10px;
+            text-transform: uppercase;
+
+        }
+
+        nav>button {
+            border: none;
+            background-color: rgb(8, 8, 85);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            padding: ;
+            /* display: inline; */
+            font-size: 17px;
+
+            position: absolute;
+            top: 15px;
+            right: 250px;
+
+        }
+
+        nav>span>button {
+            border: none;
+            background-color: rgba(29, 91, 226, 0.829);
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: capitalize;
+            padding: ;
+            /* display: inline; */
+            font-size: 17px;
+
+            position: absolute;
+            top: 10px;
+            right: 170px;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        span>h5 {
+            color: #23A6F0;
+            text-align: center;
+            padding-top: 100px;
+            text-transform: uppercase;
+
+        }
+
+        h1.home {
+            color: white;
+            text-align: center;
+            padding: 30px;
+
+            font-size: 60px;
+            text-transform: capitalize;
+        }
+
+        .homebody>p {
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            padding-top: 10px;
+            line-height: 30px;
+        }
+
+        .homebody>span>button {
+            color: rgba(29, 91, 226, 0.829);
+
+            margin-top: 38px;
+
+            position: relative;
+            left: 500px;
+            padding: 16px 50px;
+            border: 2px solid rgba(29, 91, 226, 0.829);
+            border-radius: 5px;
+
+
+            background-color: rgb(8, 8, 85);
+            font-weight: bold;
+        }
+
+        .homebody>.bodybutton {
+            color: white;
+
+
+
+            margin-top: 40px;
+            position: absolute;
+            right: 500px;
+            padding: 16px 50px;
+            border: none;
+            border-radius: 5px;
+
+
+            background-color: rgba(29, 91, 226, 0.829);
+
+            font-weight: bold;
+        }
+
+        .cardss {
+            display: flex;
+            margin-top: 40px;
+            padding: 30px 10px 90px 90px;
+
+        }
+
+        div>.card1 {
+
+            background-color: white;
+
+            width: 260px;
+            height: 220px;
+
+
+        }
+
+        .card1>.smallbox {
+            width: 50px;
+            height: 50px;
+            background-color: lightsalmon;
+            margin: 15px 0 10px 23px;
+            border-radius: 5px;
+        }
+
+        .card1>.train {
+            margin-top: 15px;
+            margin-left: 23px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #252B42;
+        }
+
+        .card1>.linecard1 {
+            margin: 20px 0 10px 23px;
+
+        }
+
+        .card1>.text {
+            margin: 18px 0 0 23px;
+            font-size: 13px;
+            color: #737373;
+            letter-spacing: 0.30px;
+
+        }
+
+        div>.card2 {
+
+            background-color: white;
+
+            width: 260px;
+            height: 220px;
+            margin-left: 20px;
+
+
+        }
+
+        .card2>.smallbox2 {
+            width: 50px;
+            height: 50px;
+            background-color: lightcoral;
+            margin: 15px 0 10px 23px;
+            border-radius: 5px;
+        }
+
+        .card2>.train2 {
+            margin-top: 15px;
+            margin-left: 23px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #252B42;
+        }
+
+        .card2>.linecard2 {
+            margin: 20px 0 10px 23px;
+
+        }
+
+        .card2>.text2 {
+            margin: 18px 0 0 23px;
+            font-size: 13px;
+            color: #737373;
+            letter-spacing: 0.30px;
+
+
+        }
+
+        div>.card3 {
+
+
+
+            background: #23A6F0;
+
+            width: 260px;
+            height: 220px;
+            margin-left: 20px;
+
+
+        }
+
+        .card3>.smallbox3 {
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 15px 0 10px 23px;
+            border-radius: 5px;
+        }
+
+        .card3>.train3 {
+            margin-top: 15px;
+            margin-left: 23px;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .card3>.linecard3 {
+            margin: 20px 0 10px 23px;
+
+        }
+
+        .card3>.text3 {
+            margin: 18px 0 0 23px;
+            font-size: 13px;
+            color: white;
+            letter-spacing: 0.30px;
+
+
+
+        }
+
+
+        .secondpage {
+            position: relative;
+            width: 100vw;
+            height: 30vh;
+            background-color: white;
+
+
+        }
+
+        .pagetext {
+            position: absolute;
+            left: 120px;
+            top: 120px;
+
+        }
+
+        .pagetext>h1 {
+            font-size: 40px;
+            padding-top: 20px;
+            letter-spacing: 0.30px;
+        }
+
+        .pagetext>.text {
+            margin-top: 40px;
+            color: #737373;
+            letter-spacing: 0.50px;
+        }
+
+        .pagetext>.sectext2 {
+            color: #23A6F0;
+            margin-top: 40px;
+        }
+
+        .thirdpage {
+            position: relative;
+
+
+        }
+
+        .thirdpage>.pagework3 {
+            position: absolute;
+            left: 120px;
+            top: 80px;
+        }
+
+        .pagework3>h4 {
+            color: rgb(0, 102, 255);
+            margin-bottom: 15px;
+        }
+
+        .pagework3>h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+
+        .cardsss {
+
+            margin-top: 20px;
+        }
+
+        .card11>h5 {
+            background-color: red;
+
+            display: inline;
+
+            color: white;
+            padding: 5px;
+            font-size: 10px;
+            position: absolute;
+            bottom: 540px;
+            /* left: 10px; */
+            margin-left: 12px;
+            width: 40px;
+            text-align: center;
+        }
+        #but{
+         padding-left: 5px;
+         text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><span>farhan</span></li>
+                    <li>Home</li>
+                    <li>Products</li>
+                    <li>pricing</li>
+                    <li>contact</li>
+
+                </ul>
+
+                <button>login</button>
+                <span><button>join us</button></span>
+            </nav>
+            <div class="homebody">
+                <span>
+                    <h5>welcome</h5>
+                </span>
+                <h1 class="home">Selling on the <br>internet like a pro</h1>
+                <p>we know how large objects will acts, but things on a <br> small scale just do not act that way.</p>
+                <button class="bodybutton">Get Quete Now</button>
+                <span><button id="but">Learn More</button></span>
+
+            </div>
+            <div class="cardss">
+
+                <div class="card1">
+                    <div class="smallbox">
+
+                    </div>
+                    <p class="train">training courses</p>
+                    <div class="linecard1" style="width: 50px; height: 2px; background: #E74040"></div>
+                    <p class="text"> The gradual accumulation of <br>information about atomic and <br /> small-scale
+                        behaviour...</p>
+
+
+                </div>
+                <div class="card2">
+                    <div class="smallbox2">
+
+
+
+                    </div>
+                    <p class="train2">2,769 online courses</p>
+                    <div class="linecard2" style="width: 50px; height: 2px; background: #E74040"></div>
+                    <p class="text2"> The gradual accumulation of <br>information about atomic and <br /> small-scale
+                        behaviour...</p>
+                </div>
+                <div class="card3">
+             \
+                    <p class="train3">training courses</p>
+                    <div class="linecard3" style="width: 50px; height: 2px; background: white"></div>
+                    <p class="text3"> The gradual accumulation of <br>information about atomic and <br /> small-scale
+                        behaviour...</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+             
+
+               
+
+                       
+                
+                     
+                      
+                     
+                        
+                      
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
